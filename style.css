@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
+
+.baskervville-regular {
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .baskervville-regular-italic {
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  p {
+    font-size: 3vw;
+    font-family: "Baskervville";
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background: linear-gradient(to bottom, #62B4CF, white);
+}
+
+.scene {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.scene img {
+    width: 40vw;
+    height: auto;
+    margin: 20vh 0 auto 10vw;
+    position: relative;
+}
+
+#p1 {
+    width: 40vw;
+    margin: auto 10vw auto 0;
+    position: relative;
+}
+
+#steps {
+    width: 50vw;
+    height: auto;
+    margin: 0 20vw 0 30vw;
+}
+
+#p2 {
+    width: 40vw;
+    margin: auto 0 auto 10vw;
+    position: relative;
+}
+
+#bears {
+    width: 40vw;
+    height: auto;
+    margin: 0 10vw auto 0;
+}
+
+#p3 {
+    width: 80vw;
+    margin: 20vh 10vw auto 10vw;
+}
+
+
+#pic1 {
+    width: 30vw;
+    height: auto;
+    margin: 10vh 10vw 0 10vw;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+#pic1.visible {
+    opacity: 1;
+}
+
+
+#pic2 {
+    width: 30vw;
+    height: auto;
+    margin: 10vh 10vw 0 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+#pic2.visible {
+    opacity: 1;
+}
+
+#pic3 {
+    width: 30vw;
+    height: auto;
+    margin: 10vh 10vw 10vh 10vw;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+#pic3.visible {
+    opacity: 1;
+}
+
+#pic4 {
+    width: 30vw;
+    height: auto;
+    margin: 10vh 10vw 10vh 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+#pic4.visible {
+    opacity: 1;
+}
+
+
+/* .container{
+   width: 100vw;
+   height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* .button {
+    background-color: white;
+    width: 30vw;
+    height: 7vw;
+    border-radius: 200px;
+    cursor: pointer;
+    position: relative;
+}
+.button::before {
+    position: absolute;
+    content:'' ;
+    background-color: #23448B;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 200px;
+    margin-left: 1vw;
+}
+input:checked + .button {
+    background-color: white;
+    border-color: black;
+    border-width: 2px;
+}
+input:checked + .button::before {
+    transform: translateX(23vw);
+}
+input{
+    display: none;
+} */
+
+
+.container {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label{
+    width: 400px;
+    height: 100px;
+    background-color: #FEDBEA;
+    display:block;
+    border-radius: 100px;
+    margin: 0px auto;
+    cursor: pointer;
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    border-radius: 100px;
+    margin: 5px;
+    transition: 0.5s;
+}
+
+.beforeconnect {
+    transition: 1s;
+}
+
+.connect {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: black;
+    top: 35%;
+    left: 40%;
+}
+
+input[type="checkbox"]:checked + label .circle {
+    left: 300px;
+}
+
+input[type="checkbox"]:checked + label .beforeconnect {
+    opacity: 0;
+    transition: 1s;
+}
+
+.afterconnect {
+    position: relative;
+    top: 40%;
+    left: 40%;
+    transition: 1s;
+    opacity: 0;
+}
+
+.heart {
+    position: absolute;
+    background: #ff3434;
+    transform: rotate(45deg);
+}
+.heart::before,
+.heart::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background: #ff3434;
+}
+.size,
+.size::before,
+.size::after {
+    width: 30px;
+    height: 30px;
+}
+.heart::after {
+    top: -15px;
+    right: 0;
+}
+.heart::before {
+    bottom: 0;
+    left: -15px;
+}
+
+input[type="checkbox"]:checked + label .afterconnect {
+    opacity: 1;
+    transition: 1s;
+}
+input[type="checkbox"] {
+    display: none;
+}
+
+
+
+
+#p4 {
+    text-align: center;
+}
+
+#screenshot {
+    width: 80vw;
+    height: auto;
+    margin: 20vh 10vw 0 10vw;
+}
+
+#home {
+    width: 80vw;
+    height: auto;
+    margin: 20vh 10vw 0 10vw;
+}
+
+#snowfall {
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
