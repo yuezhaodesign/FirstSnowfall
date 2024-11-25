@@ -293,7 +293,7 @@ input[type="checkbox"] {
 #screenshot {
     width: 80vw;
     height: auto;
-    margin: 20vh 10vw 0 10vw;
+    margin: 0 10vw 0 10vw;
     scale: 0.8;
     opacity: 0;
     animation: fade-in 1s linear forwards;
@@ -305,7 +305,7 @@ input[type="checkbox"] {
 #home {
     width: 80vw;
     height: auto;
-    margin: 20vh 10vw 0 10vw;
+    margin: 0 10vw 0 10vw;
     scale: 0.8;
     opacity: 0;
     animation: fade-in 1s linear forwards;
